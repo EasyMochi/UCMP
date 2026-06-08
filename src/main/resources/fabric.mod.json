@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "ucmp",
+  "version": "${version}",
+  "name": "UCMP",
+  "description": "Unofficial Cobblemon Patches",
+  "authors": [
+	"EasyMochi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+	"main": [
+	  "moe.okaeri.ucmp.UCMP"
+	]
+  },
+  "mixins": [
+	"ucmp.mixins.json"
+  ],
+  "depends": {
+	"fabricloader": ">=${loader_version}",
+	"fabric-api": "*",
+	"minecraft": "${minecraft_version}",
+	"fabric-language-kotlin": ">=${kotlin_version}",
+	"cobblemon": ">=${cobblemon_version}"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "moe.okaeri.ucmp.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PokemonEntityStopSeenByPlayerMixin",
+    "StatusEffectInstanceMixin"
+  ],
+  "client": [
+    "client.ClientPlayNetworkHandlerMixin",
+    "client.ClientWorldMixin",
+    "client.PokemonClientDelegateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
